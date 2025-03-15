@@ -1,0 +1,123 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact container - Properly centered */
+.contact-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* Adjusted to fit correctly */
+}
+
+/* Profile image container - Correctly positioned */
+.contact-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px; /* Places image above contact box */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+}
+
+/* Circular background behind image */
+.contact-image-container::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Profile image */
+.contact-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+/* Heading - Adjusted positioning */
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 40px; /* Ensures it appears correctly below the image */
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Form styling - Properly structured */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px; /* Adjusted spacing */
+}
+
+/* Form fields */
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Input fields with underline only */
+input, textarea {
+    width: 100%;
+    padding: 8px 4px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    font-size: 14px;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect */
+input:focus, textarea:focus {
+    border-bottom: 2px solid #28a745;
+    outline: none;
+}
+
+/* Button */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

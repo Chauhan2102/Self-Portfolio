@@ -1,0 +1,32 @@
+/* Portfolio Preview */
+.portfolio-preview {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 1.2em;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}

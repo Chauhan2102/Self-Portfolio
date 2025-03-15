@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image Styling */
+.kashish-img {
+    width: 300px;  /* Adjust size */
+    height: 300px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+    position: absolute; /* Positioning */
+    top: 130px;
+    left: 100px; /* Moves it to the left corner */
+    border: 4px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(45deg, red, orange, yellow, green, rgb(53, 6, 85), rgb(176, 241, 255)) border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background-size: 300% 300%;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Hover Effect: Multi-color Border */
+.kashish-img:hover {
+    border: 4px solid transparent;
+    background: linear-gradient(black, white) padding-box, 
+                linear-gradient(120deg, #ff0000, #ff7300, #ffeb00, #00ff00, #008cff, rgb(211, 179, 233), rgb(176, 241, 255)) border-box;
+    transform: scale(1.05); /* Slight zoom effect */
+    background-size: 300% 300%;
+    animation: moveBorder 3s linear infinite;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+@keyframes moveBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.hero h1 {
+    font-family: "Caveat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    padding-left: 30%;
+    padding-top: 80px;
+    font-size: 4em;
+    margin: 10px 0
+}
+
+.hero p {
+    font-size: 1.2em;
+    padding-left: 30%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+    
+    /* Moves the button slightly to the right */
+    margin-left: 500px; /* Adjust this value to control how much to shift */
+
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+#greeting {
+    display: inline-block; /* Prevents layout shift */
+    min-width: 90px; /* Adjust width based on longest word */
+}
+
+/* --------------------- Drop down css ----------------------------- */
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align dropdown right below "About" */
+    left: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    padding: 5px 0;
+}
+
+/* Dropdown Items */
+.dropdown-content li {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 5px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #084455;
+    color: white;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* --------------------- Drop down css ----------------------------- */
